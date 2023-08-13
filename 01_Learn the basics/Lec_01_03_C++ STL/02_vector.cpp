@@ -140,72 +140,93 @@ int main()
     }
 
 
-//           >>>>> Deletion in Vector <<<<<
+        //           >>>>> Deletion in Vector <<<<<
 
-//   vector<int> sit ={1,2,8,6,5,2,7,8,3,9,0,4,6,23,29}
+        //   vector<int> sit ={1,2,8,6,5,2,7,8,3,9,0,4,6,23,29}
 
-sit.erase(sit.begin()); //{delted value = 1} {sit vector=2,8,6,5,2,7,8,3,9,0,4,6,23,29}
-for(auto i : sit ){
-    cout<<i<<" Print afte delete "<<endl;
-}
-sit.erase(sit.begin()+1);//{delted value = 8} {vector sit=2,6,5,2,7,8,3,9,0,4,6,23,29}
-for(auto i : sit ){
-    cout<<i<<" Print afte delete "<<endl;
-}
-
-
-sit.erase(sit.begin()+2, sit.begin()+6);   //  delted value = 5,2,7,8} {vector sit=2,6,5,3,9,0,4,6,23,29}
-                                          // This syntax is for delete data in between vector 
-                                         // Eak adresss se dusre adress ke bich ke data ko delete krne ke liye
-                                        // First adress uska dena hoga ja se delete krna hai 
-                                       // Second adress jha tak delete krna hai uske bad ka 
-                                      // Second adress se phle tak ka data delete hoga 
-                                     // Isme strat included hota hai end included nhi hota hai 
-for(auto i : sit ){
-    cout<<i<<" Print afte delete "<<endl;
-}
-
-//       >>>>>   Insert Function   <<<<<
+        sit.erase(sit.begin()); //{delted value = 1} {sit vector=2,8,6,5,2,7,8,3,9,0,4,6,23,29}
+        for(auto i : sit ){
+            cout<<i<<" Print afte delete "<<endl;
+        }
+        sit.erase(sit.begin()+1);//{delted value = 8} {vector sit=2,6,5,2,7,8,3,9,0,4,6,23,29}
+        for(auto i : sit ){
+            cout<<i<<" Print afte delete "<<endl;
+        }
 
 
-vector<int> sit5(2,100);  // Yha vector sit5 bna rhe hai or use 2 bar 100 inser kr rhe hai 
-                         // vector sit5 = {100,100}
-sit5.insert(sit5.begin(),300);   // Syntax >>> vector_name.insert(adress_in_which_insert, value_what_to_insert)
-                                // Yha vector sit5 ke staring adress{0 pe} eak 300 insert ho jyega
-                               //  vector sit5 = {300,100,100}
-for(auto i : sit5){
-    cout<<i<<" Printing after useing inser function "<<endl;
-}
+        sit.erase(sit.begin()+2, sit.begin()+6);   //  delted value = 5,2,7,8} {vector sit=2,6,5,3,9,0,4,6,23,29}
+                                                // This syntax is for delete data in between vector 
+                                                // Eak adresss se dusre adress ke bich ke data ko delete krne ke liye
+                                                // First adress uska dena hoga ja se delete krna hai 
+                                            // Second adress jha tak delete krna hai uske bad ka 
+                                            // Second adress se phle tak ka data delete hoga 
+                                            // Isme strat included hota hai end included nhi hota hai 
+        for(auto i : sit ){
+            cout<<i<<" Print afte delete "<<endl;
+        }
 
-sit5.insert(sit5.begin()+1,3,50); //  Syntax >>> vector_name.insert(adress_in_which_insert,how_many_times_to_insert, value_what_to_insert)
-                                 //  //  vector sit5 = {300,50,50,50,100,100}
-for(auto i : sit5){
-    cout<<i<<" Printing after useing inser function 2 "<<endl;
-}
+        //       >>>>>   Insert Function   <<<<<
 
 
-// Eak vector ko dusre vector me insert krna 
-vector<int>sit6(3,61);
-sit6.push_back(8);
-sit6.push_back(21);
-sit6.push_back(99);
-sit6.push_back(65);
-sit6.push_back(34);
-sit6.push_back(92);
-sit6.push_back(11);
-sit6.push_back(6);
+        vector<int> sit5(2,100);  // Yha vector sit5 bna rhe hai or use 2 bar 100 inser kr rhe hai 
+                                // vector sit5 = {100,100}
+        sit5.insert(sit5.begin(),300);   // Syntax >>> vector_name.insert(adress_in_which_insert, value_what_to_insert)
+                                        // Yha vector sit5 ke staring adress{0 pe} eak 300 insert ho jyega
+                                    //  vector sit5 = {300,100,100}
+        for(auto i : sit5){
+            cout<<i<<" Printing after useing inser function "<<endl;
+        }
+
+        sit5.insert(sit5.begin()+1,3,50); //  Syntax >>> vector_name.insert(adress_in_which_insert,how_many_times_to_insert, value_what_to_insert)
+                                        //  //  vector sit5 = {300,50,50,50,100,100}
+        for(auto i : sit5){
+            cout<<i<<" Printing after useing inser function 2 "<<endl;
+        }
 
 
-// vector sit5 ={ 61,61,61,8,21,99,65,34,92,11,6}
-for(auto i : sit6){
-    cout<<i<<" Printing  vector sit6  "<<endl;
-}
-// Now we inserting vector sit6{form zeroth index to seventh index} in vector sit5{At zeroth index}
-sit5.insert(sit5.begin(),sit6.begin(),sit6.begin()+7);
-//Syntax >>> vector_name.insert(Jis_vector_me_jha_pe_insert_krna_hai_address,Jis_vector_ko_jha_se_insert_krwna_hai_address,Jis_vector_ko_jha_tak_insert_krwana_hai_address,)
-for(auto i : sit5){
-    cout<<i<<" Print sit5 after inserting sit6 "<<endl;
-}
+        // Eak vector ko dusre vector me insert krna 
+        vector<int>sit6(3,61);
+        sit6.push_back(8);
+        sit6.push_back(21);
+        sit6.push_back(99);
+        sit6.push_back(65);
+        sit6.push_back(34);
+        sit6.push_back(92);
+        sit6.push_back(11);
+        sit6.push_back(6);
+        
+
+
+        // vector sit6 ={ 61,61,61,8,21,99,65,34,92,11,6}
+        for(auto i : sit6){
+            cout<<i<<" Printing  vector sit6  "<<endl;
+        }
+        // Eak vector ko dusre vector me insert krna
+        // Now we inserting vector sit6{form zeroth index to sixth index} in vector sit5{At zeroth index}
+        sit5.insert(sit5.begin(),sit6.begin(),sit6.begin()+7); // isme v start wala inlude hota hai last wala nhi {sit6 me }
+        //Syntax >>> vector_name.insert(Jis_vector_me_jha_pe_insert_krna_hai_address,Jis_vector_ko_jha_se_insert_krwna_hai_address,Jis_vector_ko_jha_tak_insert_krwana_hai_uske_bad_ka_address,)
+        for(auto i : sit5){
+            cout<<i<<" Print sit5 after inserting sit6 "<<endl;
+        }
+
+        // Some othe function in vector
+
+        cout<<sit6.size()<<" Printing the size of vector sit6"<<endl; // sit6.size()>>> ye vector ke size ko print krega
+
+
+        //  vector sit6 ={ 61,61,61,8,21,99,65,34,92,11,6}
+        sit6.pop_back();  // sit6 ke last wale element ko delete kr dega
+
+        sit6.swap(sit5);  // Ye sit6 ke sare element ko sit5 me dal dega 
+                        // Or sit5 ke sare element ko sit 6 me dal dega
+                        // Dono ko aaps me swap kr dega
+
+        sit6.clear(); // >>> sit6 me jitna v data(element) hoga wo sara clear ho jyega
+
+        
+        cout<<sit6.empty()<<" Printing empty function"<<endl;  // Ye btata hai vector empty hai ya nhi
+        cout<<sit5.empty()<<" Printing empty function"<<endl; // Syntax >>> vector_name.empty();
+
 
     return 0;
 }
