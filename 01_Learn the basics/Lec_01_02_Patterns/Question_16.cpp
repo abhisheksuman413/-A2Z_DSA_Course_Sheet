@@ -2,7 +2,15 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+/*
+A
+BB
+CCC
+DDDD
+EEEEE
+FFFFFF
+GGGGGGG
+*/
 void print1(int n)
 {
     char a = 65;

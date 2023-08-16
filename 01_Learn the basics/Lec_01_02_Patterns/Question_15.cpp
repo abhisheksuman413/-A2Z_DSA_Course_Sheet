@@ -2,7 +2,15 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+/*
+ABCDEFG
+ABCDEF
+ABCDE
+ABCD
+ABC
+AB
+A
+*/
 void print1(int n)
 {
     int p = n;

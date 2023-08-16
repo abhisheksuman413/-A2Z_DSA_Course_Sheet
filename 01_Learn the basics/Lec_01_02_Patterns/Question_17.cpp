@@ -2,7 +2,15 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+/*
+      A
+     ABA
+    ABCBA
+   ABCDCBA
+  ABCDEDCBA
+ ABCDEFEDCBA
+ABCDEFGFEDCBA
+*/
 void print1(int n)
 {
     int b = n - 1;

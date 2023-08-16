@@ -1,7 +1,15 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+/*
+G
+G F
+G F E
+G F E D
+G F E D C
+G F E D C B
+G F E D C B A
+*/
 void print1(int n)
 {
     

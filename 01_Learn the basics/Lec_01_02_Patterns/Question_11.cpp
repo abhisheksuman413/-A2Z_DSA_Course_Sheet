@@ -1,7 +1,15 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+/*
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+0 1 0 1 0 1
+1 0 1 0 1 0 1
+*/
 void print1(int n)
 {
 
