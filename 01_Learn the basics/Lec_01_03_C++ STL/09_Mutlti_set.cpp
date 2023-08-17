@@ -20,7 +20,7 @@ int main()
 
     /*
     ye set ke trh hi hote hai isme unique element nhi hote
-    hai but shorted ya (assending order) me hote hai
+    hai but sorted ya (assending order) me hote hai
 
     */
 

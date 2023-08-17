@@ -15,7 +15,7 @@ int main()
 
     /*
     Priority_queue is queue haveing larget value in top
-     Priority_queue shorted form me hota hai but unique nhi
+     Priority_queue sorted form me hota hai but unique nhi
      hota or sbse phle sbse bda element ko store krta hai  
     >>> Descending order me
     >>> Data is not stored in liner fashion 

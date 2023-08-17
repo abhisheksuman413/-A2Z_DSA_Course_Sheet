@@ -19,7 +19,7 @@ int main()
        do se jda bar de diye to wo eak bar hi store krta hai
 
        >>> Sbse chota element sbse phle store krta hai
-       >>> Store every thing in shorted order and unique
+       >>> Store every thing in sorted order and unique
        >>> Set hamesa assending order me rhta hai
        >>> set sit[0]  is trika se access nhi kr skte
        >>> set ko iterator ke through access kr skte hai
