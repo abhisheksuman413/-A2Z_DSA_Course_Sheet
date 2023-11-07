@@ -13,7 +13,7 @@ using namespace std;
 void print1(int n)
 {
 
-    for (int i = 1; i < n + 1; i++)
+    for (int i = 1; i <= n; i++)
     {
 
         for (int j = 1; j < i + 1 ; j++)
@@ -46,6 +46,23 @@ void print1(int n)
         cout << endl;
     }
 }
+
+// Niche Striver ka solution hai 
+// void print1(int n ){
+//     int start =1;
+//     for(int i = 1; i<=n; i++){
+
+        
+//         if(i%2 ==0 ) start =0;
+//         else start = 1;
+
+//         for(int j = 0; j<i; j++){
+//             cout<<start<<" ";
+//             start = 1- start;
+//         }
+//         cout<<endl;
+//     }
+// }
 
 int main()
 {

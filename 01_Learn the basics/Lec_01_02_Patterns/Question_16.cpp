@@ -13,17 +13,27 @@ GGGGGGG
 */
 void print1(int n)
 {
-    char a = 65;
+    
     for (int i = 0; i < n; i++)
     {
-
+        char a = 65+i;
         for (int j = 0; j < i + 1; j++)
         {
             cout << a;
         }
-        a++;
         cout << endl;
     }
+
+    // Striver code 
+
+    // for(int i=0; i<n; i++){
+    //     char ch = 'A'+i;
+    //     for(int j=0; j<i+1; j++){
+    //         cout<<ch;
+    //     }
+    //     cout<<endl;
+    // }
+    
 }
 
 int main()

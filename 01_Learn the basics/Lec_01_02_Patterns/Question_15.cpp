@@ -13,17 +13,25 @@ A
 */
 void print1(int n)
 {
-    int p = n;
-    for (int i = 0; i < n; i++)
-    {
-        char a = 65;
-        for (int j = 0; j < p; j++)
-        {
-            cout << a;
-            a++;
+    
+    // for (int i = 0; i < n; i++)
+    // {
+    //     char a = 65;
+    //     for (int j = 0; j < n-i; j++)
+    //     {
+    //         cout << a;
+    //         a++;
+    //     }
+    //     cout << endl;
+    // }
+
+
+    // Striver code 
+    for(int i=0; i<n; i++){
+        for(char ch ='A'; ch<'A'+(n-i); ch++){
+            cout<<ch;
         }
-        p--;
-        cout << endl;
+        cout<<endl;
     }
 }
 

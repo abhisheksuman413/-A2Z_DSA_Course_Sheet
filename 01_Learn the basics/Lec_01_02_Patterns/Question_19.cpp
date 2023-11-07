@@ -19,36 +19,41 @@ using namespace std;
 */
 void print1(int n)
 {
-    int a = 0;
+    // 1st half 
     for (int i = 0; i < n; i++)
     {
+        // Stars
         for (int j = 0; j < n - i; j++)
         {
             cout << "*";
         }
-        for (int p = 0; p < a; p++)
+        // Space
+        for (int p = 0; p < 2*i; p++)
         {
             cout << " ";
         }
-        a = a + 2;
+        // Stars
         for (int q = 0; q < n - i; q++)
         {
             cout << "*";
         }
         cout << endl;
     }
-    int b = 2 * n - 2;
+
+    // 2nd half 
     for (int r = 0; r < n; r++)
     {
+        // Stars
         for (int f = 0; f < r + 1; f++)
         {
             cout << "*";
         }
-        for (int g = 0; g < b; g++)
+        // Space
+        for (int g = 0; g <(2*(n-r))-2; g++)
         {
             cout << " ";
         }
-        b = b - 2;
+        // Stars
         for (int h = 0; h < r + 1; h++)
         {
             cout << "*";

@@ -34,7 +34,45 @@ void print1(int n)
         a=a-2;
         cout << endl;
     }
+
+// And way of code by me 
+//     for(int i =0 ; i<n; i++){
+//         for( int j = 0; j<i+1; j++){
+//             cout<<j+1<<" ";
+//         }
+//         for(int j =0; j<(2*(n-i))-2; j++){
+//             cout<<"  ";
+//         }
+//         int num = i+1;
+//         for( int j = 0; j<i+1; j++){
+//             cout<<num<<" ";
+//             num--;
+//         }
+//         cout<<endl;
+//     }
 }
+
+
+// Striver Solution 
+
+// void print1( int n ){
+//     int space = 2*(n-1);
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             cout<<j+1<<" ";
+//         }
+//         for(int j=0; j<space; j++){
+//             cout<<"  ";
+//         }
+//         for(int j=i+1; j>=1; j--){
+//             cout<<j<<" ";
+//         }
+//         space-=2;
+//         cout<<endl;
+        
+//     }
+// }
+
 
 int main()
 {

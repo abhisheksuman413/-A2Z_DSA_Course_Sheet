@@ -38,6 +38,22 @@ void print1(int n ){
 }
 
 
+// Niche wala Striver ka solution hai 
+
+// void print1(int n ){
+//     for(int i = 0; i<2*n-1; i++){
+//         int stars= i;
+//         if(i>n){
+//             stars = 2*n -i;
+//         }
+//         for(int j =0; j<stars; j++){
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
 int main()
 {
     int n;

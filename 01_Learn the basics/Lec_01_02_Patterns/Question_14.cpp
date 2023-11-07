@@ -15,6 +15,7 @@ void print1(int n)
     for (int i = 0; i < n; i++)
     {
         char a = 65;
+        // char a = 'A'; >>> Uper wale ke place pe ye v likh skte hai
         for (int j = 0; j < i + 1; j++)
         {
             cout << a;
@@ -23,6 +24,17 @@ void print1(int n)
         cout << endl;
     }
 }
+
+
+// Striver solution
+// void print1(int n ){
+//     for(int i =0; i<n; i++){
+//         for(char ch = 'A'; ch<'A'+i; ch++){
+//             cout<<ch<<" ";
+//          }
+//          cout<<endl;
+//     }
+// }
 
 
 int main()

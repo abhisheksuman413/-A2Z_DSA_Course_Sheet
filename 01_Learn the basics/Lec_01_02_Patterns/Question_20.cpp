@@ -20,38 +20,40 @@ using namespace std;
 */
 void print1(int n)
 {
-    int b = 2 * n - 2;
+    // 1st half
     for (int r = 0; r < n; r++)
     {
+        // Stars
         for (int f = 0; f < r + 1; f++)
         {
             cout << "*";
         }
-        for (int g = 0; g < b; g++)
+        // Space
+        for (int g = 0; g <(2*(n-r))-2;g++)
         {
             cout << " ";
         }
-        b = b - 2;
+        // Stars
         for (int h = 0; h < r + 1; h++)
         {
             cout << "*";
         }
         cout << endl;
     }
-
-    int a = 2;
-
+    // 2nd half 
     for (int i = 0; i < n - 1; i++)
     {
+        // Stars 
         for (int j = 0; j < n - 1 - i; j++)
         {
             cout << "*";
         }
-        for (int p = 0; p < a; p++)
+        // Space
+        for (int p = 0; p < 2*i+2; p++)
         {
             cout << " ";
         }
-        a = a + 2;
+        // Stars
         for (int q = 0; q < n - 1 - i; q++)
         {
             cout << "*";
@@ -60,6 +62,26 @@ void print1(int n)
     }
 }
 
+// Niche wala code striver ka hai 
+// void print1(int n){
+//     int space = 2*n-2;
+//     for(int i=1;i<=2*n-1; i++){
+//         int stars = i; 
+//         if(i>n) stars = 2*n-i;
+//         for(int j=0; j<stars; j++){
+//             cout<<"*";
+//         }
+//         for(int j=0; j<space; j++){
+//             cout<<" ";
+//         }
+//         for(int j=0; j<stars; j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//         if(i<n) space -=2;
+//         else space +=2;
+//     }
+// }
 
 int main()
 {

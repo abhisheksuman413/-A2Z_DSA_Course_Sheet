@@ -21,11 +21,25 @@ void print1(int n)
             cout << a<<" ";
             a--;
         }
-        
         cout << endl;
     }
 }
 
+
+// Niche wala code striver ke solution ke liye hai jo different hai solution se 
+
+// void print1(int n)
+// {
+    
+//     for (int i = 0; i < n; i++)
+//     {
+        
+//         for(char ch ='E'-i; ch<= 'E'; ch++){
+//             cout<<ch<<" ";
+//         }
+//         cout << endl;
+//     }
+// }
 
 
 int main()

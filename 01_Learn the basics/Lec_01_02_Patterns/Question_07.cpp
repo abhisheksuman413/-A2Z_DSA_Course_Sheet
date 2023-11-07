@@ -14,11 +14,21 @@ void print1(int n)
 {
     for (int i = 0; i < n; i++)
     {
+        // Space 
         for (int j = i; j < n - 1; j++)
         {
             cout << " ";
         }
-        for (int q = 0; q < i + i + 1; q++)
+
+        // Uper wale code ke place pe niche wala code v likh skte hai 
+
+        // for (int j = 0; j<n-i-1; j++){
+        //     cout<<" ";
+        // }
+
+
+        // Stars
+        for (int q = 0; q < 2*i + 1; q++)
         {
             cout << "*";
         }
