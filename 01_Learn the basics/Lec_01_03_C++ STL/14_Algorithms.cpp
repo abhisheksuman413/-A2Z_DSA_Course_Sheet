@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Making comparator
+// Making comparator(See Striver viedo for making comparator)
 bool comp(pair<int,int> p1,pair<int,int>p2){
 
     if (p1.second < p2.second) return true;
