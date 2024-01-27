@@ -17,15 +17,69 @@ using namespace std;
 // 	return true;
 // }
 
+// ***** Another method *****
+
+// bool isPrime(int n)
+// {
+// 	// Write your code here.
+
+// 	vector<int> ls;
+// 	for (int i = 1; i * i <= n; i++)
+// 	{
+// 		if (n % i == 0)
+// 		{
+// 			ls.push_back(i);
+// 			if ((n / i) != i)
+// 			{
+// 				ls.push_back(n / i);
+// 			}
+// 		}
+// 	}
+// 	if (ls.size() == 2)
+// 	{
+// 		return 1;
+// 	}
+// 	else
+// 	{
+// 		return 0;
+// 	}
+// }
+
+// ***** Another Method *****
+
+bool isPrime(int n)
+{
+	int count = 0;
+	for (int i = 1; i * i <= n; i++)
+	{
+		if (n % i == 0)
+		{
+			count++;
+			if ((n / i) != i)
+			{
+				count++;
+			}
+		}
+	}
+	if (count == 2)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
 
 int main()
 {
-    
-    return 0;
+
+	return 0;
 }
 
 /*
 Question_05 :- Armstrong Numbers
+link:- https://www.codingninjas.com/studio/problems/check-prime_624934?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 
 
 Problem statement

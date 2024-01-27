@@ -5,20 +5,22 @@ bool checkArmstrong(int x)
 {
     // Write your code here
 
-    int count = 0;
-    int p = x;
+    // int count = 0;
+    // int p = x;
+    // while (p != 0)
+    // {
+    //     p = p / 10;
+    //     ++count;
+    // }
+    
+    // Count digit ka code niche wale trika se v likh skte hai or uper wale se v 
+
+    int count = (int)( log10(x)+1);
     int q = x;
-    while (p != 0)
-    {
-        p = p / 10;
-        ++count;
-    }
-    long ans = 0;
     int num = 0;
     while (x)
     {
         int rem = x % 10;
-        ans = ans * 10 + rem;
         x = x / 10;
         num = num + pow(rem, count);
     }
@@ -34,11 +36,12 @@ bool checkArmstrong(int x)
 
 int main()
 {
-
+    cout<<checkArmstrong(1634);
     return 0;
 }
 /*
 Question_05 :- Armstrong Numbers
+Link :- https://www.codingninjas.com/studio/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 
 Problem statement
 You are given an integer 'n'.
@@ -86,7 +89,7 @@ false
 
 
 Expected Time Complexity:
-Try to solve this in O(log(n)). 
+Try to solve this in O(log(n)).
 
 
 Constraints:

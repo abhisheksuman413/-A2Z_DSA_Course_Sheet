@@ -1,22 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-class Solution {
+class Solution
+{
 public:
-    bool isPalindrome(int x) {
-         long ans = 0;
-    int dup = x;
-        while(x >0){
-            int rem = x%10;
-            ans = ans*10+rem;
-            x=x/10;
-        }  
+    bool isPalindrome(int x)
+    {
+        long ans = 0;
+        int dup = x;
+        while (x > 0)
+        {
+            int rem = x % 10;
+            ans = ans * 10 + rem;
+            x = x / 10;
+        }
 
-        if(dup==ans){
+        if (dup == ans)
+        {
             return 1;
         }
-        else{
+        else
+        {
             return 0;
         }
     }
@@ -24,17 +28,17 @@ public:
 
 int main()
 {
-    
+
     return 0;
 }
 
 /*
 Question_03 :- Check Palindrome
 
-Given an integer x, return true if x is a 
+Given an integer x, return true if x is a
 palindrome, and false otherwise.
 
- 
+
 
 Example 1:
 
@@ -51,12 +55,12 @@ Example 3:
 Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
- 
+
 
 Constraints:
 
 -231 <= x <= 231 - 1
- 
+
 
 Follow up: Could you solve it without converting the integer to a string?
 */

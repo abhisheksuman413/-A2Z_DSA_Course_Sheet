@@ -1,31 +1,62 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int calcGCD(int n, int m){
+int calcGCD(int n, int m)
+{
     // Write your code here.
 
-    
-     if(n>m){
-        swap(n,m);
-    }
-    while(m%n!=0){
-        int v = m%n;
-        m=n;
-        n=v;
-    
-    }
-    return n;
-}
+    // if (n > m)
+    // {
+    //     swap(n, m);
+    // }
+    // while (m % n != 0)
+    // {
+    //     int v = m % n;
+    //     m = n;
+    //     n = v;
+    // }
+    // return n;
 
+    // ***** Another method *****
+
+    // int i1;
+    // for(int i = min(n,m); i>=1; i--){
+    //     if(n%i==0&& m%i==0){
+    //         i1=i;
+    //         break;
+    //     }
+    // }
+    // return i1;
+
+    //  ***** Another Method *****
+
+
+    while(n>0 && m>0){
+        if(n>m){
+            n=n%m;
+        }
+        else{
+            m=m%n;
+        }
+    }
+    if(n==0){
+            return m;
+        }
+        else{
+            return n;
+        }
+}
 
 int main()
 {
-    
+
+    cout<<calcGCD(6,4);
     return 0;
 }
 
 /*
 Question_04 :- GCD or HCF
+Link:- https://www.codingninjas.com/studio/problems/hcf-and-lcm_840448?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 
 
 Problem statement
@@ -71,7 +102,7 @@ Sample Output 2:
 
 
 Expected Time Complexity:
-Try to solve this in O(log(n)) 
+Try to solve this in O(log(n))
 
 
 Constraints:
