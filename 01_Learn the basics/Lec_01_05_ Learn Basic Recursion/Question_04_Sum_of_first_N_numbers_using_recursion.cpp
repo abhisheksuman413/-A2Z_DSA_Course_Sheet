@@ -23,7 +23,8 @@ using namespace std;
 
 
 
-// Another Solution
+// Another Solution with Time Limit: 1 sec
+
 
 long long sumFirstN(long long n) {
     // Declare a variable 'ans'.
@@ -34,6 +35,20 @@ long long sumFirstN(long long n) {
     
     return ans;
 }
+
+
+
+// Another Solution with Functional Recursion 
+
+// long long sumFirstN(long long n){
+//     if(n==0){
+//         return 0;
+//     }
+//     else{
+//         return n + sumFirstN(n-1);
+//     }
+// }
+
 
 
 
