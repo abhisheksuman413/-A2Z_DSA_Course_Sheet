@@ -115,7 +115,7 @@ int main()
 
 /*
 
-Question_05 :-  N to 1 without loop
+Question_06 :-  N to 1 without loop
 
 
 Link:- https://www.codingninjas.com/studio/problems/reverse-an-array_8365444?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
