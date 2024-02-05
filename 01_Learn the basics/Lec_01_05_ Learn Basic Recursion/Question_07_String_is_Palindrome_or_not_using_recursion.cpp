@@ -72,8 +72,10 @@ bool isPalindrome(string str){
 
 
     for(int i =0; i<str.length();i++){
-        if(isalnum(str[i])){
-            new_str.push_back(tolower(str[i]));
+        if(isalnum(str[i])){   // isalnum() function function is used to check if
+                              // the input value is either an alphabet or a num
+            new_str.push_back(tolower(str[i])); // tolower() function is use to convert
+                                               // upper cade into lower case 
         }
     }
     int size = new_str.size();
@@ -89,6 +91,14 @@ int main()
     cout<<isPalindrome(str);
     return 0;
 }
+
+/*
+Theroy:-
+
+>>> isalnum() function is used to check if the input value is either an alphabet or a number
+>>> tolower() function is used to convert a given character to lowercase
+
+*/
 
 
 
