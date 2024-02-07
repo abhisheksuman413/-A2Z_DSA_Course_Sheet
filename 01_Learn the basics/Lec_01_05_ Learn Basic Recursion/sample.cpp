@@ -2,31 +2,24 @@
 using namespace std;
 
 
-bool fun2(int n){
-    return true;
-}
-
-void fun(int abhi[]){
-
-    abhi[0]=0;
-    abhi[1]=0;
-    abhi[2]=0;
-    
-}
-
+  int fib(int n) {
+        if(n<=2){
+            if(n==1)return 0;
+            else return 1;
+        }
+        else{
+            int last = fib(n-1);
+            int seclast =fib(n-2);
+            return last+seclast;
+        }
+        
+    }
 
 
 
 int main()
 {
-    int n;
-    int abhi[3];
-    abhi[0]=1;
-    abhi[1]=2;
-    abhi[2]=3;
-    fun(abhi);
-    cout<<fun2(n);
-
-
+    
+    cout<<fib(7);
     return 0;
 }
