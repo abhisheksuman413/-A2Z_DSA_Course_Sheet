@@ -1,7 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Solution with map Hashing
 
+#include <bits/stdc++.h>
+
+
+
+// vector<int> countFrequency(int n, int x, vector<int> &nums)
+// {
+
+//     map<int, int> abhi;
+//     vector<int> frequency_count;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         abhi[i] = 0;
+//     }
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         if (nums[i-1] <= n)
+//         {
+//             abhi[nums[i - 1]]++;
+//         }
+//     }
+//     for (auto k : abhi)
+//     {
+//         frequency_count.push_back(k.second);
+//     }
+//     return frequency_count;
+// }
+
+
+// Another solution with array Hashing 
 
 vector<int> countFrequency(int n, int x, vector<int> &nums)
 {
