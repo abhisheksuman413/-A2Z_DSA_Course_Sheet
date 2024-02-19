@@ -74,7 +74,7 @@ int main()
 
 
 /*
-
+Codingninjas Question
 
 Question_02 :- Highest / Lowest Frequency Elements
 
