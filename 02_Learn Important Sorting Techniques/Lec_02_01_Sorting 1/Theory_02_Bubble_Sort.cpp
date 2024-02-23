@@ -5,37 +5,30 @@ void bubble_sort(int arr[], int n)
 {
     for (int i = n - 1; i >= 1; i--)
     {
-        // cout << "cheack"<<i << endl;
-       
-        cout << endl;
-        for (int j = 0; j <= i-1; j++)
+        int did_swap = 0;
+        for (int j = 0; j <= i - 1; j++)
         {
+
             if (arr[j] > arr[j + 1])
             {
                 int temp = arr[j + 1];
                 arr[j + 1] = arr[j];
                 arr[j] = temp;
+                did_swap = 1;
             }
         }
-         for (int i = 0; i < n; i++)
-        {
-            cout << arr[i] << " ";
-        }
+        if (did_swap == 0)
+            break;
     }
 }
+
+
 
 int main()
 {
     // Creating array and taking inpute
-    int n;
-    cout << " Enter the size of array" << endl;
-    cin >> n;
-    int arr[n];
-    cout << " Enter element in array" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+    int arr[7] = {14, 9, 15, 12, 6, 8, 13};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
     // Calling function Bubble sort
     bubble_sort(arr, n);
