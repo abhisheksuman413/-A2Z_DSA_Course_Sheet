@@ -3,6 +3,12 @@ using namespace std;
 
 void bubble_sort(int arr[], int n)
 {
+    /*
+        >>> Agr yha outer loop n-2 se run kiye to 0 tak chlana pdega 
+            or inner loop me j ko n-1 tak chlana pdega
+        >>> Agr yha outer loop me n-1 se run kiye to 1 tak chlana pdega
+            or inner loop me j ko n tak chlana pdega
+    */
     for (int i = n - 1; i >= 1; i--)
     {
         int did_swap = 0;

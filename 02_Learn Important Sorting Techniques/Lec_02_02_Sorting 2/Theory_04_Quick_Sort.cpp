@@ -72,10 +72,7 @@ void quick_sortt(int arr[], int n)
 {
     new_qs(arr, 0, n - 1);
 
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
+    
 }
 
 int main()
@@ -88,5 +85,9 @@ int main()
     quick_sortt(arr, n);
 
     // Printing sorted array
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
     return 0;
 }

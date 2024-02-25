@@ -48,7 +48,7 @@ void merge(int arr[], int low, int mid, int high)
 // Creating function which is called inside merge_sortt function
 void new_ms(int arr[], int low, int high)
 {
-    if (low >= high)
+    if (low == high)
         return;
     int mid = (low + high) / 2;
     new_ms(arr, low, mid);
@@ -59,17 +59,18 @@ void new_ms(int arr[], int low, int high)
 // Creating merge sort function
 void merge_sortt(int arr[], int n)
 {
-    new_ms(arr, 0, n - 1);
+    new_ms(arr, 0, n - 1); // Yha n-1 hai because array ka last index n-1 hota hai 
 }
+
 
 int main()
 {
     // Creating array and taking inpute
-    int arr[7] = {14, 9, 15, 12, 6, 8, 13};
+    int arr[5] = {9, 3, 6, 2, 0};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     // Calling function Insertion sort
-    merge_sortt(arr, n);
+    merge_sortt(arr,n);
 
     // Printing sorted array
 
