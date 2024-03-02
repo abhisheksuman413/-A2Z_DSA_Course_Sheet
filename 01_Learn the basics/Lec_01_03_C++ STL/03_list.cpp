@@ -9,7 +9,7 @@ int main()
     sit.emplace_back(4);
 
     sit.push_front(65);
-    sit.emplace_front(55); /*Vector me push_front()/emplace_fronr() nhi
+    sit.emplace_front(55); /*Vector me push_front()/emplace_front() nhi
                              hota hai iske bdle hamlog insert operation krte the
                              insert function in vector is very costly(time complexity)
                              camepare to push_front()/emplace_front()
@@ -17,6 +17,15 @@ int main()
                                  hota hai
                              >>> But in vector ka internal operation singly Linked List se
                                  hota hai */
+
+    // Printing list 
+    for(auto i : sit){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+
+    // Printing back element of list
+    cout<<sit.back()<<endl;
 
     // And rest all function similar to vector
 

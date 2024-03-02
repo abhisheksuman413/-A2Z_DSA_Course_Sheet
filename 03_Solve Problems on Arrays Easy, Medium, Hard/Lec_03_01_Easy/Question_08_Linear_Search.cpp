@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Optimal solution 
+/*
+T.C :- O(n)
+S.C :- O(1)
+*/
+
 
 int linearSearch(int n, int num, vector<int> &arr)
 {
