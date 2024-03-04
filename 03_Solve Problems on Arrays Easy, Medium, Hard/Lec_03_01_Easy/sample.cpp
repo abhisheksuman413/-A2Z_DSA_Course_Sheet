@@ -146,26 +146,3 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
 
     return union_array;
 }
-
-int main()
-{
-    vector<int> a;
-    vector<int> b;
-    a.push_back(1);
-    a.push_back(2);
-    a.push_back(3);
-    a.push_back(4);
-    a.push_back(6);
-
-    b.push_back(2);
-    b.push_back(3);
-    b.push_back(5);
-
-    vector<int> result = sortedArray(a, b);
-
-    for (auto i : result)
-    {
-        cout << i << " ";
-    }
-    return 0;
-}
