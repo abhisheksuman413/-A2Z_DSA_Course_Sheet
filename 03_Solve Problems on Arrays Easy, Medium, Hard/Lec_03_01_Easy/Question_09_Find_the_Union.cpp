@@ -92,6 +92,7 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
 T.C :- O(a) + O(b) = O(a + b)
 S.C :-O(a + b) ---> This is use to return the array not to solve the question
                ---> This S.C in worst case 
+>>> a & b is the size of array a & b 
 
 */
 

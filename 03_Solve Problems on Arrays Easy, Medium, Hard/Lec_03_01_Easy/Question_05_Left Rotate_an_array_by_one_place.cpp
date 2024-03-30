@@ -2,6 +2,9 @@
 using namespace std;
 
 // Coding nijnja
+
+// T.C :- O(n)
+// S.C :- O(1)
 #include <bits/stdc++.h>
 vector<int> rotateArray(vector<int> &arr, int n) {
   // Write your code here.

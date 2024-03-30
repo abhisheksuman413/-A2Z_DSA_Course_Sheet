@@ -3,12 +3,15 @@ using namespace std;
 
 
 // coding ninja 
-
-
-
-
-
+ 
 // Brute force solution
+
+/*
+T.C :- O(k)+O(n-k)+O(k) = O(n+k)
+S.C :- O(k)
+>>> Here k is the no of rotation 
+>>> Here n is the size of array 
+*/
 
 
 // vector<int> rotateArray(vector<int> arr, int k) {
@@ -32,9 +35,12 @@ using namespace std;
 //   int j = 0;
 //   for (int i = arr_size - k; i < arr_size; i++) {
 //     arr[i] = temp_arr[i-(arr_size - k)];
+
 //     // arr[i] = temp_arr[i-(k-1)];   //(confisuion)
+
 //     // arr[i]=temp_arr[j];
 //     // j++;
+
 //   }
 //   return arr;
 // }
@@ -42,6 +48,15 @@ using namespace std;
 
 
 // Optimal Solution 
+
+/*
+T.C :- O(k)+O(n-k)+O(n) = O(2n)
+S.C :- O(1)
+>>> Here k is the no of rotation 
+>>> Here n is the size of array 
+>>> Yha T.C thora jada ho gya hai but yha S.C constant ho gya hai 
+    brute force solution se jo better hai 
+*/
 
 // #include <bits/stdc++.h>
 

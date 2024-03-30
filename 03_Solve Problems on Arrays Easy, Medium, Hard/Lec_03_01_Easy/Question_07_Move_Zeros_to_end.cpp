@@ -51,7 +51,7 @@ and n is size of array
 // Optimal solution:-
 
 /*
-T.C :- O(x) + O(x-n) = O(n)
+T.C :- O(x) + O(n-x) = O(n)
 S.C :- O(1) 
 here x is the no of index where 1st zero appers in array
 */
