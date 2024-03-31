@@ -61,7 +61,10 @@ int main()
 	sit.push_back(1);
 	sit.push_back(2);
 
-	cout<<"ans is :- "<<check(sit)<<endl;
+	// cout<<"ans is :- "<<check(sit)<<endl;
+
+
+	cout<<1%2;
 
 	
 	return 0;

@@ -155,3 +155,110 @@ int main()
     cout << " Single element in array is  : - " << getSingleElement(a) << endl;
     return 0;
 }
+
+
+
+
+/*
+Coding Ninja 
+
+Question_12 :- Find The Single Element
+
+Link :- https://www.naukri.com/code360/problems/find-the-single-element_6680465?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+
+Problem statement
+You are given a sorted array 'arr' of positive integers of size 'n'.
+
+
+
+It contains each number exactly twice except for one number, which occurs exactly once.
+
+
+
+Find the number that occurs exactly once.
+
+
+
+Example :
+Input: ‘arr’ = {1, 1, 2, 3, 3, 4, 4}.
+
+Output: 2
+
+Explanation: 1, 3, and 4 occur exactly twice. 2 occurs exactly once. Hence the answer is 2.
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1:
+5
+1 1 2 2 3
+
+
+Sample Output 1:
+3
+
+
+Explanation of sample output 1:
+{1, 2} each occurs twice, whereas 3 occurs only once.
+Hence the answer is 3.
+
+
+Sample Input 2:
+5
+8 8 9 9 10
+
+
+Sample Output 2:
+10
+
+
+Expected time complexity :
+The expected time complexity is O(n), but try solving it in O(log n).
+
+
+Constraints:
+1 <= 'n' <= 10^4
+1 <= 'arr[i]' <= 10^9
+
+‘n’ is always odd.
+
+Time Limit: 1 sec
+
+*/
+
+
+
+
+
+
+/*
+Leetcode 
+
+Question_12 :- 136. Single Number
+
+Link :- https://leetcode.com/problems/single-number/description/
+
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+ 
+
+Example 1:
+
+Input: nums = [2,2,1]
+Output: 1
+Example 2:
+
+Input: nums = [4,1,2,1,2]
+Output: 4
+Example 3:
+
+Input: nums = [1]
+Output: 1
+ 
+
+Constraints:
+
+1 <= nums.length <= 3 * 104
+-3 * 104 <= nums[i] <= 3 * 104
+Each element in the array appears twice except for one element which appears only once.
+
+*/
