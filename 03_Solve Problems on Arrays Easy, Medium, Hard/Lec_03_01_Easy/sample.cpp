@@ -1,65 +1,43 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// void longestSubarrayWithSumK(vector<int> a, int n)
-// {
-//     long long sum = 0;
-//     for (int i = 0; i < a.size(); i++)
-//     {
-//         for (int j = i; j < a.size(); j++)
-//         {
-//             long long tem_sum = 0;
-//             for (int k = i; k <= j; k++)
-//             {
-//                 cout << a[k] << " ";
-
-//                 tem_sum = tem_sum + a[k];
-//             }
-//             if(tem_sum>sum)sum=tem_sum;
-//             cout<<" sum :- "<<tem_sum;
-//             cout << endl;
-//         }
-
-//         cout << endl;
-//     }
-//     cout<<" ye sum hai :- "<<sum;
-// }
-
-
-
-void maxSubarraySum(vector<int> arr, int n)
+bool search(vector<int> a,int nums)
 {
-    // Write your code here.
-    long long sum =0;
-    for(int i =0; i<n; i++)
+    for(int i=0; i<a.size();i++)
     {
-        for(int j=i; j<n; j++)
+        if(a[i]==nums)
         {
-            long long tem_sum=0;
-            for(int k=i ;k<=j; k++)
-            {
-                 cout << arr[k] << " ";
-                tem_sum =tem_sum+arr[k];
-            }
-            if(tem_sum>sum)sum=tem_sum;
-            cout << endl;
-          
+            return  true;
         }
-        cout << endl;
+        
     }
-    cout<<"sum is :-"<<  sum;
+    return false;
+}
+
+
+
+int longestSuccessiveElements(vector<int>&a) {
+
+    int length = 1;
+    for(int i =0; i<a.size(); i++)
+    {
+        int x =a[i];
+        int count =1;
+        while(search(a,x+1)==true)
+        {
+            x=x+1;
+            count =count +1;
+        }
+        length=max(length,count);
+    }
+    return length;
+    // Write your code here.
 }
 
 int main()
 {
-    vector<int> a;
-    a.push_back(10);
-    a.push_back(20);
-    a.push_back(-30);
-    a.push_back(40);
-    a.push_back(-50);
-    a.push_back(60);
-
-    maxSubarraySum(a, a.size());
+    vector<int> a = {1 ,1, 2, 1};
+    int ans = longestSuccessiveElements(a);
+    cout << "The longest consecutive sequence is " << ans << "\n";
     return 0;
 }
